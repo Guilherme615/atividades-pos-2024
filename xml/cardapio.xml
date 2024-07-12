@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
 <cardapio>
     <prato id="L01">
         <nome>Pizza de macarrão</nome>
-        <descrição>pizza com macarrão por cima</descrição>
+        <descricao>pizza com macarrão por cima</descricao>
         <ingredientes>macarrão, musarela</ingredientes>
-        <preço>79</preço>
+        <preco>79</preco>
         <calorias>450</calorias>
-        <tempopreparo>2 horas</tempopreparo>
+        <tempoPreparo>2 horas</tempoPreparo>
     </prato>
     <prato id="L02">
         <nome>pastel de chocolate</nome>
-        <descrição>pastel com recheio de chocolate</descrição>
+        <descricao>pastel com recheio de chocolate</descricao>
         <ingredientes>creme de chocolate</ingredientes>
-        <preço>40</preço>
+        <preco>40</preco>
         <calorias>150</calorias>
-        <tempopreparo>30 minutos</tempopreparo>
+        <tempoPreparo>30 minutos</tempoPreparo>
     </prato>
     <prato id="L03">
         <nome>nikuman</nome>
-        <descrição>bolinho de carne</descrição>
+        <descricao>bolinho de carne</descricao>
         <ingredientes>folhas de couve chinesa, lombo suíno, molho shoyu, óleo de gergelim torrado, cebolinha verde</ingredientes>
-        <preço>50</preço>
+        <preco>50</preco>
         <calorias>250</calorias>
-        <tempopreparo>25 minutos</tempopreparo>
+        <tempoPreparo>25 minutos</tempoPreparo>
     </prato>
     <prato id="L04">
         <nome>bolo de uva passa</nome>
-        <descrição>bolinho de uva passa</descrição>
+        <descricao>bolinho de uva passa</descricao>
         <ingredientes>leite, uva passa, farinha, ovos</ingredientes>
-        <preço>85</preço>
+        <preco>85</preco>
         <calorias>250</calorias>
-        <tempopreparo>1 hora</tempopreparo>
+        <tempoPreparo>1 hora</tempoPreparo>
     </prato>
     <prato id="L05">
         <nome>pizza de polvo</nome>
-        <descrição>pizza com tentaculos de polvo por cima</descrição>
+        <descricao>pizza com tentaculos de polvo por cima</descricao>
         <ingredientes>polvo, pizza</ingredientes>
-        <preço>150</preço>
+        <preco>150</preco>
         <calorias>500</calorias>
-        <tempopreparo>20 minutos</tempopreparo>
+        <tempoPreparo>20 minutos</tempoPreparo>
     </prato>
 </cardapio>
