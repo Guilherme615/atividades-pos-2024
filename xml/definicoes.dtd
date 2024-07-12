@@ -1,7 +1,8 @@
 <!ELEMENT cardapio (prato+)>
 <!ELEMENT prato (nome, descricao, ingredientes, preco, calorias, tempoPreparo)>
 <!ATTLIST prato id ID #REQUIRED>
-<!ELEMENT ingredientes (ingredientes+)>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
 <!ELEMENT nome (#PCDATA)>
 <!ELEMENT descricao (#PCDATA)>
 <!ELEMENT preco (#PCDATA)>
