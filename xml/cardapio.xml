@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cardapio>
+    <prato id="L01">
+        <nome>Pizza de macarrão</nome>
+        <descrição>pizza com macarrão por cima</descrição>
+        <ingredientes>macarrão, musarela</ingredientes>
+        <preço>79</preço>
+        <calorias>450</calorias>
+        <tempopreparo>2 horas</tempopreparo>
+    </prato>
+    <prato id="L02">
+        <nome>pastel de chocolate</nome>
+        <descrição>pastel com recheio de chocolate</descrição>
+        <ingredientes>creme de chocolate</ingredientes>
+        <preço>40</preço>
+        <calorias>150</calorias>
+        <tempopreparo>30 minutos</tempopreparo>
+    </prato>
+    <prato id="L03">
+        <nome>nikuman</nome>
+        <descrição>bolinho de carne</descrição>
+        <ingredientes>folhas de couve chinesa, lombo suíno, molho shoyu, óleo de gergelim torrado, cebolinha verde</ingredientes>
+        <preço>50</preço>
+        <calorias>250</calorias>
+        <tempopreparo>25 minutos</tempopreparo>
+    </prato>
+    <prato id="L04">
+        <nome>bolo de uva passa</nome>
+        <descrição>bolinho de uva passa</descrição>
+        <ingredientes>leite, uva passa, farinha, ovos</ingredientes>
+        <preço>85</preço>
+        <calorias>250</calorias>
+        <tempopreparo>1 hora</tempopreparo>
+    </prato>
+    <prato id="L05">
+        <nome>pizza de polvo</nome>
+        <descrição>pizza com tentaculos de polvo por cima</descrição>
+        <ingredientes>polvo, pizza</ingredientes>
+        <preço>150</preço>
+        <calorias>500</calorias>
+        <tempopreparo>20 minutos</tempopreparo>
+    </prato>
+</cardapio>
