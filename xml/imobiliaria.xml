@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imobiliaria [
+<!ELEMENT imobiliaria (imovel+)>
+<!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+<!ELEMENT descricao (#PCDATA)>
+<!ELEMENT valor (#PCDATA)>
+<!ELEMENT proprietario (nome, (email | telefone)*)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>
+<!ELEMENT endereco (rua, bairro, cidade, numero?)>
+<!ELEMENT rua (#PCDATA)>
+<!ELEMENT bairro (#PCDATA)>
+<!ELEMENT cidade (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+<!ELEMENT tamanho (#PCDATA)>
+<!ELEMENT numQuartos (#PCDATA)>
+<!ELEMENT numBanheiros (#PCDATA)>
+]>
+
+
+<imobiliaria>
+    <imovel>
+      <descricao>Apartamento no centro da cidade</descricao>
+      <proprietario>
+        <nome>João Silva</nome>
+        <email>joao.silva@example.com</email>
+        <telefone>11987654321</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Rua das Flores</rua>
+        <bairro>Centro</bairro>
+        <cidade>São Paulo</cidade>
+        <numero>123</numero>
+      </endereco>
+      <caracteristicas>
+        <tamanho>85m²</tamanho>
+        <numQuartos>3</numQuartos>
+        <numBanheiros>2</numBanheiros>
+      </caracteristicas>
+      <valor>450000</valor>
+    </imovel>
+    
+    <imovel>
+      <descricao>Casa com quintal grande</descricao>
+      <proprietario>
+        <nome>Maria Oliveira</nome>
+        <email>maria.oliveira@example.com</email>
+        <telefone>21987654321</telefone>
+        <telefone>21912345678</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Rua das Acácias</rua>
+        <bairro>Jardim das Flores</bairro>
+        <cidade>Rio de Janeiro</cidade>
+        <numero>45</numero>
+      </endereco>
+      <caracteristicas>
+        <tamanho>120m²</tamanho>
+        <numQuartos>4</numQuartos>
+        <numBanheiros>3</numBanheiros>
+      </caracteristicas>
+      <valor>750000</valor>
+    </imovel>
+    
+    <imovel>
+      <descricao>Kitnet perto da universidade</descricao>
+      <proprietario>
+        <nome>Carlos Souza</nome>
+        <telefone>31987654321</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Avenida Universitária</rua>
+        <bairro>Centro</bairro>
+        <cidade>Belo Horizonte</cidade>
+      </endereco>
+      <caracteristicas>
+        <tamanho>30m²</tamanho>
+        <numQuartos>1</numQuartos>
+        <numBanheiros>1</numBanheiros>
+      </caracteristicas>
+      <valor>200000</valor>
+    </imovel>
+    
+    <imovel>
+      <descricao>Apartamento com vista para o mar</descricao>
+      <proprietario>
+        <nome>Ana Pereira</nome>
+        <email>ana.pereira@example.com</email>
+      </proprietario>
+      <endereco>
+        <rua>Rua da Praia</rua>
+        <bairro>Beira Mar</bairro>
+        <cidade>Salvador</cidade>
+        <numero>456</numero>
+      </endereco>
+      <caracteristicas>
+        <tamanho>95m²</tamanho>
+        <numQuartos>3</numQuartos>
+        <numBanheiros>2</numBanheiros>
+      </caracteristicas>
+      <valor>600000</valor>
+    </imovel>
+    
+    <imovel>
+      <descricao>Sítio com área verde ampla</descricao>
+      <proprietario>
+        <nome>Fernando Lima</nome>
+        <telefone>11999887766</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Estrada do Sítio</rua>
+        <bairro>Zona Rural</bairro>
+        <cidade>Campinas</cidade>
+      </endereco>
+      <caracteristicas>
+        <tamanho>500m²</tamanho>
+        <numQuartos>5</numQuartos>
+        <numBanheiros>4</numBanheiros>
+      </caracteristicas>
+      <valor>1500000</valor>
+    </imovel>
+  </imobiliaria>

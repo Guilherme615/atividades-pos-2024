@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz [
+    <!ELEMENT quiz (disciplina, professor, turma, data, questões)>
+    <!ATTLIST quiz versao CDATA #REQUIRED>
+    <!ELEMENT disciplina (#PCDATA)>
+    <!ELEMENT professor (nome, matrícula?)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT matrícula (#PCDATA)>
+    <!ELEMENT turma (#PCDATA)>
+    <!ELEMENT data (#PCDATA)>
+    <!ELEMENT questões (questão+)>
+    <!ELEMENT questão (enunciado, pontuação, alternativas)>
+    <!ELEMENT enunciado (#PCDATA)>
+    <!ELEMENT pontuação (#PCDATA)>
+    <!ELEMENT alternativas (alternativa+)>
+    <!ELEMENT alternativa (#PCDATA)>
+    <!ATTLIST alternativa correta (sim|nao) #REQUIRED>
+]>
+
+<quiz versao="1.0">
+    <disciplina>Matemática</disciplina>
+    <professor>
+        <nome>Maria Silva</nome>
+        <matrícula>12345</matrícula>
+    </professor>
+    <turma>8A</turma>
+    <data>2024-07-19</data>
+    <questões>
+        <questão>
+            <enunciado>Qual é o resultado de 2+2?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">4</alternativa>
+                <alternativa correta="nao">3</alternativa>
+                <alternativa correta="nao">5</alternativa>
+                <alternativa correta="nao">6</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Quanto é 5 vezes 6?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">30</alternativa>
+                <alternativa correta="nao">25</alternativa>
+                <alternativa correta="nao">35</alternativa>
+                <alternativa correta="nao">40</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é a raiz quadrada de 64?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">8</alternativa>
+                <alternativa correta="nao">6</alternativa>
+                <alternativa correta="nao">7</alternativa>
+                <alternativa correta="nao">9</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é o valor de π (pi) com duas casas decimais?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">3.14</alternativa>
+                <alternativa correta="nao">3.15</alternativa>
+                <alternativa correta="nao">3.13</alternativa>
+                <alternativa correta="nao">3.16</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é o resultado de 10 ao quadrado?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">100</alternativa>
+                <alternativa correta="nao">10</alternativa>
+                <alternativa correta="nao">20</alternativa>
+                <alternativa correta="nao">1,000</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>
