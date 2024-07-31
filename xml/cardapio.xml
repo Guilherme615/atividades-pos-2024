@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
-<cardapio xmlns="http://cardapio.org" 
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://cardapio.org cardapio.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "cardapio.xsd">
+<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance">
     <prato id="L01">
         <nome>Pizza de macarrão</nome>
         <descricao>pizza com macarrão por cima</descricao>
