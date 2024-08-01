@@ -1,0 +1,61 @@
+[
+    {
+        "nome": "Pizza de macarrão",
+        "descricao": "pizza com macarrão por cima",
+        "ingredientes": [
+            "macarrão",
+            "macarrão"
+        ],
+        "preco": "79",
+        "calorias": "450",
+        "tempoPreparo": "2 horas"
+    },
+    {
+        "nome": "pastel de chocolate",
+        "descricao": "pastel com recheio de chocolate",
+        "ingredientes": [
+            "creme de chocolate"
+        ],
+        "preco": "40",
+        "calorias": "150",
+        "tempoPreparo": "30 minutos"
+    },
+    {
+        "nome": "nikuman",
+        "descricao": "bolinho de carne",
+        "ingredientes": [
+            "folhas de couve chinesa",
+            "lombo suíno",
+            "molho shoyu",
+            "óleo de gergelim torrado",
+            "cebolinha verde"
+        ],
+        "preco": "50",
+        "calorias": "250",
+        "tempoPreparo": "25 minutos"
+    },
+    {
+        "nome": "bolo de uva passa",
+        "descricao": "bolinho de uva passa",
+        "ingredientes": [
+            "leite",
+            "uva passa",
+            "farinha",
+            "ovos"
+        ],
+        "preco": "85",
+        "calorias": "250",
+        "tempoPreparo": "1 hora"
+    },
+    {
+        "nome": "pizza de polvo",
+        "descricao": "pizza com tentaculos de polvo por cima",
+        "ingredientes": [
+            "polvo",
+            "pizza"
+        ],
+        "preco": "150",
+        "calorias": "500",
+        "tempoPreparo": "20 minutos"
+    }
+]
