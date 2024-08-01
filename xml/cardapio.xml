@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
-<cardapio>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "cardapio.xsd">
+<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance">
     <prato id="L01">
         <nome>Pizza de macarrão</nome>
         <descricao>pizza com macarrão por cima</descricao>
         <ingredientes>
-            <ingrediente>macarrão</ingrediente>
             <ingrediente>macarrão</ingrediente>
         </ingredientes>
         <preco>79</preco>
@@ -16,7 +15,7 @@
         <nome>pastel de chocolate</nome>
         <descricao>pastel com recheio de chocolate</descricao>
         <ingredientes>
-           <ingrediente>creme de chocolate</ingrediente>  
+            <ingrediente>creme de chocolate</ingrediente>  
         </ingredientes>
         <preco>40</preco>
         <calorias>150</calorias>
@@ -51,10 +50,10 @@
     </prato>
     <prato id="L05">
         <nome>pizza de polvo</nome>
-        <descricao>pizza com tentaculos de polvo por cima</descricao>
-        <ingredientes> 
-           <ingrediente>polvo</ingrediente> 
-           <ingrediente>pizza</ingrediente>
+        <descricao>pizza com tentáculos de polvo por cima</descricao>
+        <ingredientes>
+            <ingrediente>polvo</ingrediente>
+            <ingrediente>pizza</ingrediente>
         </ingredientes>
         <preco>150</preco>
         <calorias>500</calorias>
