@@ -1,0 +1,124 @@
+{
+    "disciplina": "Matemática",
+    "professor": {
+        "nome": "Maria Silva",
+        "matrícula": "12345"
+    },
+    "turma": "8A",
+    "data": "2024-07-19",
+    "questões": {
+        "questão": [
+            {
+                "enunciado": "Qual é o resultado de 2+2?",
+                "pontuação": "1",
+                "alternativas": [
+                    {
+                        "alternativa": "4",
+                        "@correta": "sim"
+                    },
+                    {
+                        "alternativa": "3",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "5",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "6",
+                        "@correta": "nao"
+                    }
+                ]
+            },
+            {
+                "enunciado": "Quanto é 5 vezes 6?",
+                "pontuação": "1",
+                "alternativas": [
+                    {
+                        "alternativa": "30",
+                        "@correta": "sim"
+                    },
+                    {
+                        "alternativa": "25",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "35",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "40",
+                        "@correta": "nao"
+                    }
+                ]
+            },
+            {
+                "enunciado": "Qual é a raiz quadrada de 64?",
+                "pontuação": "1",
+                "alternativas": [
+                    {
+                        "alternativa": "8",
+                        "@correta": "sim"
+                    },
+                    {
+                        "alternativa": "6",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "7",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "9",
+                        "@correta": "nao"
+                    }
+                ]
+            },
+            {
+                "enunciado": "Qual é o valor de π (pi) com duas casas decimais?",
+                "pontuação": "1",
+                "alternativas": [
+                    {
+                        "alternativa": "3.14",
+                        "@correta": "sim"
+                    },
+                    {
+                        "alternativa": "3.15",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "3.13",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "3.16",
+                        "@correta": "nao"
+                    }
+                ]
+            },
+            {
+                "enunciado": "Qual é o resultado de 10 ao quadrado?",
+                "pontuação": "1",
+                "alternativas": [
+                    {
+                        "alternativa": "100",
+                        "@correta": "sim"
+                    },
+                    {
+                        "alternativa": "10",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "20",
+                        "@correta": "nao"
+                    },
+                    {
+                        "alternativa": "1,000",
+                        "@correta": "nao"
+                    }
+                ]
+            }
+        ]
+    },
+    "@versao": "1.0"
+}
