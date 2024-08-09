@@ -3,8 +3,8 @@
         xmlns:p="http://cardapio.org"
         targetNamespace="http://cardapio.org"
         elementFormDefault="qualified">
+
     <element name="cardapio">
-        
         <complexType>
             <sequence>
                 <element name="prato" maxOccurs="unbounded">
@@ -12,7 +12,7 @@
                         <sequence>
                             <element name="nome" type="string"/>
                             <element name="descricao" type="string"/>
-                            <element name="ingredientes" minOccurs="0">
+                            <element name="ingredientes" >
                                 <complexType>
                                     <sequence>
                                         <element name="ingrediente" type="string" maxOccurs="unbounded"/>
@@ -35,4 +35,5 @@
             </sequence>
         </complexType>
     </element>
+
 </schema>
