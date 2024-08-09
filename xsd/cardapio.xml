@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "cardapio.xsd">
+<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance">
+    <prato id="L01">
+        <nome>Pizza de macarrão</nome>
+        <descricao>pizza com macarrão por cima</descricao>
+        <ingredientes>
+            <ingrediente>macarrão</ingrediente>
+        </ingredientes>
+        <preco>79</preco>
+        <calorias>450</calorias>
+        <tempoPreparo>2 horas</tempoPreparo>
+    </prato>
+    <prato id="L02">
+        <nome>pastel de chocolate</nome>
+        <descricao>pastel com recheio de chocolate</descricao>
+        <ingredientes>
+            <ingrediente>creme de chocolate</ingrediente>  
+        </ingredientes>
+        <preco>40</preco>
+        <calorias>150</calorias>
+        <tempoPreparo>30 minutos</tempoPreparo>
+    </prato>
+    <prato id="L03">
+        <nome>nikuman</nome>
+        <descricao>bolinho de carne</descricao>
+        <ingredientes>
+            <ingrediente>folhas de couve chinesa</ingrediente>
+            <ingrediente>lombo suíno</ingrediente>
+            <ingrediente>molho shoyu</ingrediente>
+            <ingrediente>óleo de gergelim torrado</ingrediente>
+            <ingrediente>cebolinha verde</ingrediente> 
+        </ingredientes>
+        <preco>50</preco>
+        <calorias>250</calorias>
+        <tempoPreparo>25 minutos</tempoPreparo>
+    </prato>
+    <prato id="L04">
+        <nome>bolo de uva passa</nome>
+        <descricao>bolinho de uva passa</descricao>
+        <ingredientes>
+            <ingrediente>leite</ingrediente>
+            <ingrediente>uva passa</ingrediente>
+            <ingrediente>farinha</ingrediente>
+            <ingrediente>ovos</ingrediente>
+        </ingredientes>
+        <preco>85</preco>
+        <calorias>250</calorias>
+        <tempoPreparo>1 hora</tempoPreparo>
+    </prato>
+    <prato id="L05">
+        <nome>pizza de polvo</nome>
+        <descricao>pizza com tentáculos de polvo por cima</descricao>
+        <ingredientes>
+            <ingrediente>polvo</ingrediente>
+            <ingrediente>pizza</ingrediente>
+        </ingredientes>
+        <preco>150</preco>
+        <calorias>500</calorias>
+        <tempoPreparo>20 minutos</tempoPreparo>
+    </prato>
+</cardapio>
