@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE quiz SYSTEM "cardapio.xsd">
-<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance">
-    <prato id="L01">
+<!DOCTYPE cardapio>
+<cardapio xmlns="http://cardapio.org" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://cardapio.org 
+                  cardapio.xsd">
+    <prato id="01">
         <nome>Pizza de macarrão</nome>
         <descricao>pizza com macarrão por cima</descricao>
         <ingredientes>
@@ -11,7 +14,7 @@
         <calorias>450</calorias>
         <tempoPreparo>2 horas</tempoPreparo>
     </prato>
-    <prato id="L02">
+    <prato id="02">
         <nome>pastel de chocolate</nome>
         <descricao>pastel com recheio de chocolate</descricao>
         <ingredientes>
@@ -21,7 +24,7 @@
         <calorias>150</calorias>
         <tempoPreparo>30 minutos</tempoPreparo>
     </prato>
-    <prato id="L03">
+    <prato id="03">
         <nome>nikuman</nome>
         <descricao>bolinho de carne</descricao>
         <ingredientes>
@@ -35,7 +38,7 @@
         <calorias>250</calorias>
         <tempoPreparo>25 minutos</tempoPreparo>
     </prato>
-    <prato id="L04">
+    <prato id="04">
         <nome>bolo de uva passa</nome>
         <descricao>bolinho de uva passa</descricao>
         <ingredientes>
@@ -48,7 +51,7 @@
         <calorias>250</calorias>
         <tempoPreparo>1 hora</tempoPreparo>
     </prato>
-    <prato id="L05">
+    <prato id="05">
         <nome>pizza de polvo</nome>
         <descricao>pizza com tentáculos de polvo por cima</descricao>
         <ingredientes>
