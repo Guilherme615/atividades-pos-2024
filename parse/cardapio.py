@@ -1,7 +1,7 @@
 from xml.dom.minidom import parse
 
 # Faz o parse do arquivo XML
-dom = parse("cardapio.xml")
+dom = parse("xsd/cardapio.xml")
 
 # Elemento raiz do XML (cardapio)
 cardapio = dom.documentElement
