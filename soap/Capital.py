@@ -5,7 +5,7 @@ url = "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoServic
 
 country = input("Digite o codigo do pais ")
 # XML estruturado
-funcao - "CountryFlag"
+funcao = "CountryFlag"
 payload = f"""<?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
@@ -23,5 +23,5 @@ response = requests.request("POST", url, headers=headers, data=payload)
 
 # imprime a resposta
 content = parseString(response.text)
-print(response.text)
-print(content.documentElement.getElementsByTagName(f"m:{funcao}Result"[0].firstChild.nodeValue))
+#print(response.text)
+print(content.documentElement.getElementsByTagName(f"m:{funcao}Result")[0].firstChild.nodeValue)
