@@ -10,7 +10,7 @@ response = requests.get('https://api.github.com/user/followers', auth = HTTPBasi
 
 seguidores = response.json()
 
-for i, seguidor in enumerate(seguidores,):
+for i, seguidor in enumerate(seguidores, start=1):
     print(f"{i} - {seguidor['login']}")
 
 print(response.status_code)
