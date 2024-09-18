@@ -1,3 +1,4 @@
+/* Estilos globais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -18,33 +19,18 @@ h1, h2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Estilo para a foto do usuário */
+.user-photo {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-label, input {
-    margin: 5px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
+/* Estilo da tabela */
 table {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
 table, th, td {
@@ -57,11 +43,36 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ddd;
 }
 
-img {
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 50%;
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo dos links */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+a.logout {
+    color: red;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Estilos de formulário (para boletim) */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form label, form input, form button {
+    margin: 5px;
 }

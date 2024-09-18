@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{% block title %}Boletim{% endblock %}</h2>
+
+<form method="post">
+    <label for="ano">Ano:</label>
+    <input type="text" id="ano" name="ano" required>
+    
+    <label for="semestre">Semestre:</label>
+    <input type="text" id="semestre" name="semestre" required>
+    
+    <button type="submit">Buscar Boletim</button>
+</form>
+
+{% if boletins %}
+    <h3>Boletim do Ano {{ ano }} - Semestre {{ semestre }}</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Disciplina</th>
+                <th>Média Final</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for boletim in boletins %}
+            <tr>
+                <td>{{ boletim['disciplina'] }}</td>
+                <td>{{ boletim['media_final'] }}</td>
+                <td>{{ boletim['situacao'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+<p><a href="{{url_for('logout')}}">Logout</a></p>
+
+{% endblock %}
