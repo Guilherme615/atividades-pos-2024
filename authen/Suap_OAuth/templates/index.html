@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 
+{% block title %}Login OAuth SUAP{% endblock %}
+
 {% block content %}
-    <h2>{% block title %}Login OAuth SUAP{% endblock %}</h2>
-
-    <p><a href="{{ url_for('login') }}">Login</a></p> <!-- Certifique-se de que este link usa url_for corretamente -->
-
+    <div class="container text-center">
+        <h2>Login OAuth SUAP</h2>
+        <p><a href="{{ url_for('login') }}" class="btn btn-primary">Login</a></p>
+    </div>
 {% endblock %}
