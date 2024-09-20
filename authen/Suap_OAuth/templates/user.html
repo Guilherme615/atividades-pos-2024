@@ -1,33 +1,14 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
+
+{% block title %} {{ data['vinculo']['nome'] }} {% endblock %}
 
 {% block content %}
-    <h2>{% block title %}Perfil do Usuário{% endblock %}</h2>
-
-    <div class="text-center">
-        <img src="https://suap.ifrn.edu.br{{ user_data['url_foto_150x200'] }}" alt="foto" class="user-photo">
+    <div class="user-infos">
+        <img src="{{ data['url_foto_150x200'] }}" class="user-image" alt="foto" />
+        <h2 class="user-name">{{ data['vinculo']['nome'] }}</h2>
     </div>
 
-    <div class="text-center">
-        <table>
-            <thead>
-                <tr>
-                    <th>Campo</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for field, value in user_data.items() %}
-                <tr>
-                    <td><b>{{ field }}</b></td>
-                    <td>{{ value }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-
-    <div class="text-center" style="margin-top: 20px;">
-        <p><a href="{{ url_for('boletim') }}">Ver Boletins</a></p>
-        <p><a href="{{url_for('logout')}}" class="logout">Logout</a></p>
+    <div class="user-options">
+        <a href="{{ url_for('boletim') }}" class="btn btn-primary">Ver boletim</a>
     </div>
 {% endblock %}

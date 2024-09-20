@@ -1,40 +1,49 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
+
+{% block title %} Boletim {% endblock %}
 
 {% block content %}
-<h2>{% block title %}Boletim{% endblock %}</h2>
-
-<form method="post">
-    <label for="ano">Ano:</label>
-    <input type="text" id="ano" name="ano" required>
+   
+    {% if data %}
+    <div>
+        <div class="search">
+            <form action="{{ url_for('boletim') }}" method="get">
+                <label>Ano letivo</label>
+                <input type="number" name="ano_letivo">
     
-    <label for="semestre">Semestre:</label>
-    <input type="text" id="semestre" name="semestre" required>
+                <button type="submit">Selecionar</button>
+            </form>
+        </div>  
+        
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Disciplina</th>
+                    <th>Média final</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for item in data %}
+                    <tr>
+                        <td>{{ item["disciplina"] }}</td>
+                        <td>{{ item["media_final_disciplina"] }}</td>
+                        <td>{{ item["situacao"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </div>
+    {% else %}
+        <h3>Selecione o ano letivo</h3>
+        <form action="{{ url_for('boletim') }}" method="get">
+            <label>Ano letivo</label>
+            <input type="number" name="ano_letivo">
+
+            <button type="submit">Selecionar</button>
+        </form>
+    {% endif %}
     
-    <button type="submit">Buscar Boletim</button>
-</form>
-
-{% if boletins %}
-    <h3>Boletim do Ano {{ ano }} - Semestre {{ semestre }}</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Disciplina</th>
-                <th>Média Final</th>
-                <th>Situação</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for boletim in boletins %}
-            <tr>
-                <td>{{ boletim['disciplina'] }}</td>
-                <td>{{ boletim['media_final'] }}</td>
-                <td>{{ boletim['situacao'] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-{% endif %}
-
-<p><a href="{{url_for('logout')}}">Logout</a></p>
-
 {% endblock %}
