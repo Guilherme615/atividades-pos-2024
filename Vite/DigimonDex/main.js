@@ -1,10 +1,10 @@
 import './style.css';
-import { fetchAllDigimons, searchDigimon, previousDigimon, nextDigimon, updateNavigation } from './api.js';
+import { fetchAllDigimons, searchDigimon, previousDigimon, nextDigimon } from './api.js';
 
 window.onload = () => {
     fetchAllDigimons().then(() => {
         document.getElementById('searchButton').addEventListener('click', () => {
-            const digimonName = document.getElementById('digimonName').value;
+            const digimonName = document.getElementById('digimonName').value.trim();
             searchDigimon(digimonName);
         });
 
@@ -13,11 +13,9 @@ window.onload = () => {
 
         document.getElementById('digimonName').addEventListener('keypress', function(event) {
             if (event.key === 'Enter') {
-                const digimonName = document.getElementById('digimonName').value;
+                const digimonName = document.getElementById('digimonName').value.trim();
                 searchDigimon(digimonName);
             }
         });
-
-        updateNavigation();
     });
 };

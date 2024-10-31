@@ -13,17 +13,21 @@ export async function fetchAllDigimons() {
 }
 
 export function searchDigimon(digimonName) {
-    const searchResultIndex = digimons.findIndex(d => d.name.toLowerCase().includes(digimonName.toLowerCase()));
+    const searchResultIndex = digimons.findIndex(d => d.name.toLowerCase() === digimonName.toLowerCase());
 
     if (searchResultIndex !== -1) {
         currentIndex = searchResultIndex;
-        displayDigimon();
+        displayDigimon();  // Certifique-se de chamar essa função aqui
         updateNavigation();
     } else {
-        document.getElementById('result').innerHTML = `<p>Digimon não encontrado</p>`;
-        digimons = [];
+        displayNotFound();
         updateNavigation();
     }
+}
+
+function displayNotFound() {
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `<p>Digimon não encontrado. Tente outro nome.</p>`;
 }
 
 export function displayDigimon() {
